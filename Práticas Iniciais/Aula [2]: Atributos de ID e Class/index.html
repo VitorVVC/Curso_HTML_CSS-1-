@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula[2]</title>
+    <style>
+        
+        h1 {
+            background-color: red;
+            width: 200px;
+            /*font-weight:bold;*/
+            /*--> Vale revisão*/
+        }
+
+        /*h1 {
+            background-color: blue;
+            width: 200px;
+            width: 200px;
+        } // Caso eu optasse por realizar esta ação seria sobrescrito a tag H1 com background red para blue
+        */
+
+        p {
+            /* Selecionando diretamente a TAG*/
+            background-color: blue;
+            width: 150px;
+        }
+
+        /* Selecionando diretamente a ID*/
+        #cabecalho_dois {
+            background-color: purple;
+        }
+
+        /* Selecionando diretamente a CLASS*/
+        .fundo_vermelho {
+            background-color: red;
+            /* Neste caso gera um "erro" de especificidade. Por que nos especificamos POR UM ID que tem especificacão mais forte que class que o segundo H1 seria purple*/
+            /*background-color: red p !important;*/
+            /* Pode "corrigir" o erro porém é totalmente não recomendado a forcar o navegador a ter seu estilo*/
+        }
+
+        .bold {
+            color: yellow;
+        }
+
+    </style> <!-- Local de trazermos nosso style da classe CSS-->
+</head>
+
+<body>
+    <h1 id="cabecalho_um" class="fundo_vermelho borda esquerda"> <!-- ID sempre unico.Porém class pode se repetir-->
+        Teste
+    </h1>
+    <p>Um texto <b class="bold">qualquer</b></p>
+    <p>Um texto <b class="bold">qualquer</b></p>
+    <p>Um texto <b class="bold">qualquer</b></p>
+    <p>Um texto <b class="bold">qualquer</b></p>
+    <h1 id="cabecalho_dois" class="fundo_vermelho">
+        Teste Dois
+    </h1>
+
+</body>
+
+</html>
