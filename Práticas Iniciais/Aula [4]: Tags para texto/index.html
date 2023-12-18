@@ -1,0 +1,92 @@
+<!-- Aula para entender as TAGS de TEXTO em HTML-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula [4]</title>
+
+    <style>
+        .img_in_text {
+            width: 50px;
+            height: 50px;
+        }
+        .vermelho{
+            color: red;
+            font-size: 24px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Cabeçalho</h1>
+    <!-- Comentário: Strong == Semântica, b == puro bold -->
+    <p>
+        <!-- Comentário: Fortalece semanticamente o texto -->
+        <strong>Texto Forte Semântico</strong>
+        <!-- Comentário: B de bold -->
+        <b>Texto em Negrito</b>
+
+        <!-- Comentário: i == ênfase, em == itálico -->
+        <i>Texto em Itálico</i>
+        <!-- Comentário: Itálico -->
+        <em>Texto com Ênfase</em>
+
+        <!-- Comentário: del == DELETE, ins == INSERT -->
+        <br>
+        <del class="vermelho">Texto removido</del>
+        <ins style="color: blue;">Texto inserido</ins>
+        <br>
+
+        <!-- Comentário: s == risquinho, u == underline -->
+        <s class="vermelho">Texto com risquinho</s>
+        <u style="color: blue;">Texto sublinhado</u>
+        <br>
+
+        <!-- Comentário: a tag small é usada para textos pequenos -->
+        <small>Texto pequeno</small>
+        <br>
+
+        <!-- Comentário: Tags sup e sub para texto elevado e subscrito -->
+        2ˆ2 Exemplo de elevado: <sup>2</sup> Exemplo de H<sub>2</sub>O
+
+        <!-- Comentário: q == citação -->
+        <q cite="https://pt.wikipedia.org/wiki/Machado_de_Assis">Exemplo de citação</q>
+    </p>
+
+    <hr>
+
+    <p><span class="vermelho">Texto com cor vermelha</span> ipsum dolor sit amet consectetur adipisicing elit. Fugiat enim nemo eius suscipit numquam sed, sequi quo id
+        voluptate quam quasi aliquid, ipsa magni repudiandae voluptatum sint error quisquam maiores, odio reprehenderit.
+        Natus delectus reprehenderit ratione quibusdam temporibus deserunt architecto ut at, totam, ad error, quidem
+        maxime maiores rerum a?</p>
+
+    <!-- Comentário: Code para código dentro de parágrafos -->
+    <code>
+        console.log("Hello, World!");
+    </code>
+
+    <!-- Comentário: Pre para formatação de código -->
+    <pre>
+        int x = sc.nextInt;
+        System.out.println(x);
+    </pre>
+
+    <!-- Comentário: Blockquote para bloco de citação -->
+    <blockquote cite="https://pt.wikipedia.org/wiki/Machado_de_Assis">
+        Aqui sim eu estou fazendo um *BLOCO* de citação
+    </blockquote>
+
+    <!-- Comentário: Span e div são contêineres genéricos -->
+    <span>
+        Eu sou um bloco (1) dentro de um parágrafo.
+    </span>
+
+    <div class="vermelho">
+        Eu sou um bloco (2) dentro de um parágrafo.
+    </div>
+</body>
+
+</html>
