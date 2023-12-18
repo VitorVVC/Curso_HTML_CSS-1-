@@ -1,3 +1,7 @@
 ## Primeiros Passos Com HTML-CSS
 
-Nester repositório estarei colocando meus contatos iniciais com as linguagens de marcação HTML & CSS.
+Neste repositório estarei colocando meu contato inicial com as linguagens de marcação HTML & CSS.
+
+Dividindo-as em pastas para simplificação no momento de leitura futura.
+
+
