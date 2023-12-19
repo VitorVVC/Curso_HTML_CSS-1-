@@ -12,7 +12,8 @@
             width: 50px;
             height: 50px;
         }
-        .vermelho{
+
+        .vermelho {
             color: red;
             font-size: 24px;
         }
@@ -22,24 +23,30 @@
 
 <body>
     <h1>Cabeçalho</h1>
-    <!-- Comentário: Strong == Semântica, b == puro bold -->
+    <p>
+        <a href="https://seeklogo.com/vector-logo/273643/mdn" target="_blank">
+            <img class="img_in_text" src="https://seeklogo.com/images/M/mdn-logo-6DB9B0093F-seeklogo.com.png"
+                alt="Logo da MDN">
+        </a>
+    <!-- Comentário: Strong == Semântica, b == puro bold && Fisica-->
     <p>
         <!-- Comentário: Fortalece semanticamente o texto -->
-        <strong>Texto Forte Semântico</strong>
+        <strong>Texto Forte Semântico</strong><br>
         <!-- Comentário: B de bold -->
-        <b>Texto em Negrito</b>
+        <b>Texto em Negrito</b><br>
 
         <!-- Comentário: i == ênfase, em == itálico -->
-        <i>Texto em Itálico</i>
+        <i>Texto em Itálico</i><br>
         <!-- Comentário: Itálico -->
         <em>Texto com Ênfase</em>
-
+        <!-- Semântico -->
         <!-- Comentário: del == DELETE, ins == INSERT -->
         <br>
+        <!-- Preferivel este modelo -->
         <del class="vermelho">Texto removido</del>
         <ins style="color: blue;">Texto inserido</ins>
         <br>
-
+        <!-- Fisico -->
         <!-- Comentário: s == risquinho, u == underline -->
         <s class="vermelho">Texto com risquinho</s>
         <u style="color: blue;">Texto sublinhado</u>
@@ -58,7 +65,8 @@
 
     <hr>
 
-    <p><span class="vermelho">Texto com cor vermelha</span> ipsum dolor sit amet consectetur adipisicing elit. Fugiat enim nemo eius suscipit numquam sed, sequi quo id
+    <p><span class="vermelho">Texto com cor vermelha</span> ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+        enim nemo eius suscipit numquam sed, sequi quo id
         voluptate quam quasi aliquid, ipsa magni repudiandae voluptatum sint error quisquam maiores, odio reprehenderit.
         Natus delectus reprehenderit ratione quibusdam temporibus deserunt architecto ut at, totam, ad error, quidem
         maxime maiores rerum a?</p>
@@ -85,8 +93,14 @@
     </span>
 
     <div class="vermelho">
-        Eu sou um bloco (2) dentro de um parágrafo.
+        Eu sou um bloco (2) fora de um parágrafo.
+    </div>
+    <div>
+        <p>
+            Link de todos os elementos HTML: <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element" target="_blank">Link</a>
+        </p>
     </div>
 </body>
+<!-- Elementos em HTML : https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element-->
 
 </html>
