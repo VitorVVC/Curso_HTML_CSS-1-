@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula [6]</title>
+
+    <style>
+        /* Aqui nos atribuimos com "*" que todo estilo não tenha margem e padding. */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* Estilo para o "corpo" da página */
+        body {
+            background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/ca6a7616-0acb-4bc5-be25-c4deef0419a7/548a0642-86a3-40f4-ab8d-3ebfd75bb716/BR-pt-20231211-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+            background-size: cover;
+            background-position: top center;
+        }
+        /* Estilo para a ID cabeçalho ( heading ) */
+        #heading {
+            background: rgba(0, 0, 0, 0.7);
+        }  
+        /* Estilo para todo H1 que esteja na ID heading*/
+        #heading .h1 {
+            /*padding-top: 15px;
+            padding-left: 15px;
+            padding-bottom: 15px;
+            */
+            padding: 15px 0px;
+            /*Assim ele pega no topo,baixo, na direita e na esquerda*/
+            /*padding: 15px 0 0 0;*/
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        /* Estilo para toda tag "a" que seja "filha" da ID heading*/
+        #heading a {    
+            font-size: 20px;
+            color: #fff;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+        /* Estilo para toda DIV que seja "filha" da ID heading */
+        #heading div {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--<div style="width: 180px; height: 120px; background: red;">
+
+        <div style="width: 60px; height: 60px; background: yellow; float: left;"></div>
+
+        <div style="width: 60px; height: 60px; background: blue;float: left"></div>
+
+        <div style="width: 60px; height: 60px; background: brown;float: left"></div>
+
+        <div style="width: 120px; height: 60px; background: purple;float: left;text-align: center;">
+        <p style="width: 20px; height: 20px; background: darkcyan;"> </p></div>
+
+        <div style="width: 60px; height: 60px; background: turquoise;float: left"></div>
+
+    </div>-->
+    <!-- Simulando NETDLIX -->
+
+    <header id="heading">
+        <div>
+
+
+            <h1 class="h1">
+                <a href="#">Netflix</a>
+            </h1>
+
+            <h2 class="h1">
+                <a href="#">Entrar</a>
+            </h2>
+        </div>
+    </header>
+
+</body>
+
+</html>
