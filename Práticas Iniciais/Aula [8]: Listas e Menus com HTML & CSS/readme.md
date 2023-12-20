@@ -1,6 +1,6 @@
-### Anotações aula [8]
+## Anotações aula [8]
 
-## Tags para Listas e Menus:
+### Tags para Listas e Menus:
 
 - `<ul>` (Lista não ordenada)
   * Cria uma lista não ordenada, geralmente utilizada para menus ou itens sem uma ordem específica.
@@ -72,4 +72,5 @@
     ```
 
 - Anotações Gerais
-    *Toda tag `<ul>` e `<ol>` precisam de tags `<li>` para as comporem.
+  * Toda tag `<ul>` e `<ol>` precisam de tags `<li>` para as comporem.
+
