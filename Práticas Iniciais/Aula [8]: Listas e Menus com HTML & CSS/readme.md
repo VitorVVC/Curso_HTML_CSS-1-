@@ -72,4 +72,4 @@
     ```
 
 ### Anotações Gerais
-*Toda tag '<ul>'e '<ol>' precisam de tags '<li>' para a compor.
+*Toda tag `<ul>` e `<ol>` precisam de tags `<li>` para as comporem.
