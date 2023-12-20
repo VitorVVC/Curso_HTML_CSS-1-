@@ -1,21 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula [8]</title>
     <style>
-        *{
+        * {
             margin: 0px;
             padding: 0px;
         }
 
-        nav{
-            background: black;
-            height: 50px;
+        nav {
+            background: red;
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 10px 20px;
+            display: block;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            background-color: red;
+            margin-left: 10px;
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1> HTML Lists </h1>
@@ -24,9 +47,16 @@
     </header>
     <!-- INICIO !! -->
 
-    <nav>
+    <aside>
+        <nav>
+            <ul>
+                <li> <a href="">Home</a></li>
+                <li> <a href="">About</a></li>
+                <li> <a href="">Produto</a></li>
 
-    </nav>
+            </ul>
+        </nav>
+    </aside>
 
     <ul>
         <li> <a href="">Produto UM</a></li>
@@ -48,6 +78,7 @@
         <dt>Café preto</dt>
         <dd>Bebida quente </dd>
     </dl>
-    
+
 </body>
+
 </html>
