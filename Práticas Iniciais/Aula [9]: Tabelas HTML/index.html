@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula[9]</title>
+
+    <style>
+        table td,
+        table th {
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: left;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 800px;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        table caption {
+            caption-side: bottom;
+            text-align: right;
+            font-style: italic;
+            font-size: 14px;
+            margin: 5px;
+        }
+
+        tfoot td,
+        table th {
+            background: #ddd;
+        }
+
+        tfoot td {
+            font-style: italic;
+        }
+
+        .div-tabela{
+            max-width: 100%;
+            overflow-x: auto ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div-tabela">
+        <table>
+            <caption>Uma descrição</caption>
+            <thead>
+                <tr>
+                    <th>Titulo 1</th>
+                    <th>Titulo 2</th>
+                    <th>Titulo 3</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Aqui</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" rowspan="2"></td>
+                    <td>Total: </td>
+                </tr>
+                <tr>
+                    <td>R$555</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+
+</html>
