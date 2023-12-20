@@ -71,5 +71,5 @@
     </dl>
     ```
 
-### Anotações Gerais
+-Anotações Gerais
 *Toda tag `<ul>` e `<ol>` precisam de tags `<li>` para as comporem.
