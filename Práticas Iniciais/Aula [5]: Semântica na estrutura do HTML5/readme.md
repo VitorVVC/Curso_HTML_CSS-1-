@@ -1,8 +1,8 @@
-## Anotações aula [5]
+### Anotações aula [5]
 
 ## Tags de Separação de conteúdo:
 
-- <header> ( Cabeçalho )
+- <header> (header) ( Cabeçalho )
 * Marca a introdução de um conteúdo ou seção.Pode conter logotipos, titulos, menus de navegação e etc.
 
 * Exemplo: 
@@ -17,13 +17,15 @@
   </nav>
 </header>
 
-- <nav> ( Navegação )
-* Define uma seção de navegação.Pode conter links ou outros elementos de navegação
+<hr>
+- <nav> (nav) ( Navegação )
+* Define uma seção de navegação.Pode conter links ou outros elementos de navegação.<br>
 
 * Exemplo:
 Acima usado juntamente ao header
 
-- <main> ( Conteúdo principal )
+<hr>
+- <main> (main)( Conteúdo principal )
 * Contem o conteudo principal da página, excluindo cabeçalhos, rodapés e barras laterais.
 
 * Exemplo: 
@@ -32,6 +34,7 @@ Acima usado juntamente ao header
 <!-- Conteúdo princiapl da página -->
 </main>
 
+<hr>
 - <section> ( Seção )
 * Agrupa um conteúdo tematicamente relacionado e geralmente possue um cabeçalho (Pode e deve ser usado também quando não possuir outro separador mais semântico para a solução atual )
 
