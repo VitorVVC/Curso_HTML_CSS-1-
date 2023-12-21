@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula [10]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: blueviolet;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        label {
+            cursor: pointer;
+        }
+
+        #div-textArea {
+            padding-bottom: 5px;
+            font-family: italic;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Formulários & Inputs com HTML</h1>
+        <p>Links Uteis:<br>
+            <a href="https://www.w3schools.com/html/html_form_input_types.asp">Documentação INPUTS</a> <br>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Learn/Forms/How_to_structure_a_web_form">Documentação de
+                Formatação</a> <br>
+            <a href="https://www.w3schools.com/colors/colors_picker.asp">HTML Color Picker</a>
+        </p>
+    </header>
+    <hr>
+
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <p>O meu formulário</p>
+        <!-- Input de texto -->
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+        </p>
+
+        <!-- Checkboxes -->
+        <p>
+            <label for="dev">Sou um dev</label>
+            <input type="checkbox" name="dev" id="dev" value="sim">
+            <br>
+            <label for="dev2">Sou um dev2</label>
+            <input type="checkbox" name="dev2" id="dev2" value="sim">
+            <br>
+            <label for="dev3">Sou um dev3</label>
+            <input type="checkbox" name="dev3" id="dev3" value="sim">
+        </p>
+
+        <!-- Radio buttons -->
+        <p>
+            Gênero: <br>
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="escolha-genero" id="feminino" value="feminino">
+            <br>
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="escolha-genero" id="masculino" value="masculino">
+            <br>
+            <label for="prefiro-não-responder">Prefiro não responder</label>
+            <input type="radio" name="escolha-genero" id="prefiro-não-responder" value="prefiro-não-responder">
+        </p>
+
+        <!-- Input de data -->
+        <p>
+            <label for="datetime-local">Data de nascimento:</label>
+            <input type="datetime-local" name="datetime-local" id="datetime-local" required value="2023-04-20T20:00">
+        </p>
+
+        <!-- Input de hora -->
+        <p>
+            <label for="time">Time:</label>
+            <input type="time" name="time" id="time" required value="20:00:01">
+        </p>
+
+        <!-- Input de cor -->
+        <p>
+            <label for="cor">Cor favorita:</label>
+            <input type="color" name="cor" id="cor" required value="#FF0000">
+        </p>
+
+        <!-- Input de email -->
+        <p>
+            <label for="email">Seu email:</label>
+            <input type="email" name="email" id="email" placeholder="email@email.com">
+        </p>
+
+        <!-- Input de senha -->
+        <p>
+            <label for="password">Sua senha:</label>
+            <input type="password" name="password" id="password" placeholder="Digite sua senha">
+        </p>
+
+        <!-- Input de range -->
+        <p>
+            <label for="range">Range: </label>
+            <input type="range" list="tickmarks" name="range" id="range">
+            <datalist id="tickmarks">
+                <option value="0" label="0%"></option>
+                <option value="10"></option>
+                <option value="20"></option>
+                <option value="30"></option>
+                <option value="40"></option>
+                <option value="50" label="50%"></option>
+                <option value="60"></option>
+                <option value="70"></option>
+                <option value="80"></option>
+                <option value="90"></option>
+                <option value="100" label="100%"></option>
+            </datalist>
+        </p>
+
+        <!-- Input de arquivo -->
+        <p>
+            <label for="foto">Sua foto:</label>
+            <input type="file" name="foto" id="foto" accept=".png,.svg,image/*" multiple>
+        </p>
+
+        <!-- Input de número delimitado por uma funcão -->
+        <p>
+            <label for="number">Number:</label>
+            <input type="number" name="number" id="number" placeholder="Digite um número de 10 a 50" min="10" max="50"
+                step="2">
+        </p>
+
+        <!-- Input de número descrito pelo usuario -->
+        <p>
+            <label for="number">Number:</label>
+            <input type="number" name="number" id="number" placeholder="Digite qualquer numero">
+        </p>
+
+        <!-- Input de URL -->
+        <p>
+            <label for="url">Sua url:</label>
+            <input type="url" name="url" id="url" placeholder="URL">
+        </p>
+
+        <!-- Dropdown com opções -->
+        <p>
+            <label for="select">Selecione alguma opção:</label>
+            <select name="select" id="select">
+                <optgroup label="Teste UM">
+                    <option value="qualquer-1" label="Valor 1"></option>
+                    <option value="qualquer-2" label="Valor 2"></option>
+                    <option value="qualquer-3" label="Valor 3"></option>
+                    <option value="qualquer-4" label="Valor 4"></option>
+                </optgroup>
+            </select>
+        </p>
+
+        <!-- Área de texto -->
+        <p>
+        <div id="div-textArea">Digite o que achou do nosso site abaixo</div>
+        <label for="textArea"></label>
+        <textarea name="textArea" id="textArea" cols="30" rows="10" placeholder="Digite aqui"></textarea>
+        </p>
+
+        <!-- Botões de envio e reset -->
+        <p>
+            <button type="submit"> Enviar </button>
+            <button type="reset"> Reset </button>
+        </p>
+
+    </form>
+</body>
+
+</html>
