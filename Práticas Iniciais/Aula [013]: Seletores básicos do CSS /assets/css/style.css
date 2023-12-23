@@ -1,0 +1,85 @@
+/* Primeira parte da aula de seletores !*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*
+.color-red {
+    color: red;
+}
+
+.main-content h2 {
+    font-style: italic;
+}
+
+body.error div.main-content h2.heading {
+    color: red;
+}
+
+.pai {
+    color: red;
+}
+*/
+.pai>.filha {
+    /* Selecionar apenas a filha de pai e não as filhas de filha  */
+    /* Child Selector */
+    color: blue;
+}
+
+/*
+div {
+    color: initial;
+    margin-left: 20px;
+}
+*/
+
+/* Segunda parte da aula de seletores ! */
+/* Seletores de irmãos !*/
+
+.pai h1+p {
+    /* O "+" em css diz basicamente: Para toda classe pai, oque houver de filhos tanto H1 quanto P receberam os métodos a seguir*/
+    /* Adjacent sibling selector */
+    color: red;
+}
+
+.pai .um~.dois {
+    /* Todos os dois posteriores a UM */
+    color: red
+        /* General sibling selector*/
+}
+
+.pai .um+.dois {
+    /* O primeiro dois posterior a UM */
+    color: pink
+        /* General sibling selector*/
+}
+
+[meu-atributo~="valor1"] {
+    /* Selecionar um atributo em especifico */
+    color: red;
+}
+
+[meu-atributo^="c"] {
+    /* Seleciona todos os atributos que iniciarem com "c"*/
+    color: blueviolet;
+}
+
+[meu-atributo$="u"] {
+    /* Seleciona todos os atributos que terminam com a letra "u"*/
+    color: brown;
+}
+
+[meu-atributo*="ou"] {
+    /* Seleciona todos os atributos que estejam em meu atributo declarado com "ou" em algum momento de sua estrutura */
+    color: green;
+}
+
+[checked] {
+    /* Maneira de modificarmos um atributo declarado ( não a maneira correta pois para isso podemos usar pseudo-classes ) */
+    width: 50px;
+    height: 50px;
+}
+
+/* Terceira parte da aula de seletores !*/
+/* Seletores de atributos do CSS*/
