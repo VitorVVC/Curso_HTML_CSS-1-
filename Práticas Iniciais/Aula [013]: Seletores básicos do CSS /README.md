@@ -79,3 +79,59 @@
   <hr>
 
 - `Segunda parte da aula`
+  * Neste momento da aula vamos aprender como estilizars irmãos.
+  * Mas afinal, oque são irmãos em HTML?
+  ```html
+    <div class="pai">
+        <h1>Lorem</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, fuga!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, fuga!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, fuga!</p>
+    </div>
+  ```
+  * No código acima `<h1>` e `<p>` são irmãos.Pois ambos derivam ( são filhos ) da div "pai".
+  * Portanto para selecionarmos ambos no CSS é cabivel tao código:
+  ```css
+  .pai h1+p {
+    /* Adjacent sibling selector */
+    color: red;
+    }
+  ```
+  * Chamamos este efeito de código de `Adjacento Sibling Selector`.
+  * Que nada mais é que determinar efeitos e estilos para dois elementos filhos de um mesmo pai ( irmãos ), através de uma tag apenas.
+
+- Aproveitarei para abordar também o `General Sibling Selector`
+  * Nada mais é que "capturar" todos os elementos posteriores a um outro elemento, seja ele classes ou tags padrões, como neste exemplo:
+```css
+    .pai .um~.dois {
+    color: red
+    /* General sibling selector*/
+    }
+```
+
+  * Ele selecionará todos os elementos da classe dois que vierem posteriormente aos elementos da classe um.
+  * Um paralelo deste tipo de seletor seria este:
+```css
+    .pai .um+.dois {
+    color: pink
+    }   
+```
+
+  * Neste exemplo ele captura apenas o PRIMEIRO elemento da classe dois que vier seguido de um elemento da classe UM.
+
+- Demonstração:
+  ```html
+       <div class="pai">
+        <div class="dois">2</div>
+        <div class="um">1</div>
+        <div class="dois">2</div>
+        <div class="dois">2</div>
+        <div class="dois">2</div>
+        <div class="um">1</div>
+        <div class="dois">2</div>
+        <div class="dois">2</div>
+        <div class="dois">2</div>
+     </div>
+  ```
+  * Caso use este código com ambos os seletores acima verá que apenas o dois seguido de um ficará em rosa enquanto os demais ficarão vermelho.
+
