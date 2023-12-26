@@ -21,6 +21,7 @@ body.error div.main-content h2.heading {
     color: red;
 }
 */
+
 .pai>.filha {
     /* Selecionar apenas a filha de pai e não as filhas de filha  */
     /* Child Selector */
@@ -55,6 +56,10 @@ div {
         /* General sibling selector*/
 }
 
+
+/* Terceira parte da aula de seletores !*/
+/* Seletores de atributos do CSS*/
+
 [meu-atributo~="valor1"] {
     /* Selecionar um atributo em especifico */
     color: red;
@@ -80,6 +85,3 @@ div {
     width: 50px;
     height: 50px;
 }
-
-/* Terceira parte da aula de seletores !*/
-/* Seletores de atributos do CSS*/
