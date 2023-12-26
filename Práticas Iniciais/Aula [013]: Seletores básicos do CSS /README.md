@@ -135,3 +135,82 @@
   ```
   * Caso use este código com ambos os seletores acima verá que apenas o dois seguido de um ficará em rosa enquanto os demais ficarão vermelho.
 
+-`Terceira parte da aula`
+  * Neste momento da aula veremos seletores de atributos.
+  * Leve este código em consideração para outras explicações:
+```html
+   <input type="checkbox" checked>
+    <input type="checkbox">
+    <!-- <h1 class="heading" meu-atributo="valor1 valor2 valor3">Lorem</h1> -->
+    <h1 class="heading" meu-atributo="comecou">Lorem</h1>
+    <p class="p">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quis eaque doloremque modi culpa perferendis esse
+        cum saepe sunt assumenda necessitatibus quam voluptate at id sapiente in, minima laborum nesciunt.
+    </p>
+    <p class="p">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quis eaque doloremque modi culpa perferendis esse
+        cum saepe sunt assumenda necessitatibus quam voluptate at id sapiente in, minima laborum nesciunt.
+    </p>
+    <p class="p">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quis eaque doloremque modi culpa perferendis esse
+        cum saepe sunt assumenda necessitatibus quam voluptate at id sapiente in, minima laborum nesciunt.
+    </p>
+    <h1 class="heading">Lorem</h1>
+    <p class="p">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quis eaque doloremque modi culpa perferendis esse
+        cum saepe sunt assumenda necessitatibus quam voluptate at id sapiente in, minima laborum nesciunt.
+    </p>
+    <p class="p">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quis eaque doloremque modi culpa perferendis esse
+        cum saepe sunt assumenda necessitatibus quam voluptate at id sapiente in, minima laborum nesciunt.
+    </p>
+    <p class="p">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quis eaque doloremque modi culpa perferendis esse
+        cum saepe sunt assumenda necessitatibus quam voluptate at id sapiente in, minima laborum nesciunt.
+    </p>
+```
+  * No código acima existe N maneiras de selecionar os atributos, porém a seguir introduzirei as mais "comuns".
+
+  * Seleção através de um atributos em específico:
+```css
+[meu-atributo~="valor1"] {
+    color: red;
+}
+```
+
+  * Utilizando o seletor `[meu-atributo~="valor1"]` em CSS, estaremos selecionando elementos nos quais o atributo `meu-atributo` contenha a palavra "valor1". Este seletor não limita a busca ao que está dentro das aspas, mas sim verifica se a palavra "valor1" está presente em qualquer parte do valor do atributo, oferecendo uma maneira flexível de estilizar elementos com base em determinados conteúdos em atributos específicos.
+  
+  * Seleção de todos os atributos que iniciarem com "N" valor:
+
+```css
+[meu-atributo^="c"] {
+    color: blueviolet;
+}
+```
+
+  * Como no caso do exemplo em HTML existe um atributo chamado começou o código em CSS estará aplicando nele, pois `[meu-atributo^="c"]` basicamente expressa que qualquer atributo que inicie com C receba tais comportamentos que serão passados após as chaves.
+
+  * Seleção de todos os atributos que possuam "n" em algum momento de sua estrutura:
+
+```css
+[meu-atributo*="ou"] {
+    color: green;
+}
+```
+
+  * Ainda no caso do começou ele aqui será aplicado a cor green. Pois passando `[meu-atributo*="ou"]`. Você está dizendo que todos os atributos que possuerem em algum momento de sua estrutura as letra "ou" nessa sequencia atuem da tal maneira demandada após as chaves.
+
+  * Seleção de atributos padrões do HTML:
+
+```css
+
+[checked] {
+    width: 50px;
+    height: 50px;
+}
+```
+
+  * Por mais que essa não seja a forma correta de modificarmos um atributo já declarado por padrão podemos também fazer dessa forma.Delegar que o atributo checked atue diferente do padrão
+  * Porém para isso usamos pseudo-classes.Conteúdo que virá a seguir.
+  
+
