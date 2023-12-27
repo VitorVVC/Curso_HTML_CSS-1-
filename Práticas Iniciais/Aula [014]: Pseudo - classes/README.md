@@ -19,7 +19,7 @@
   * Link para visualização de todas as pseudo-classes `(Documentação W3S)`: https://www.w3schools.com/css/css_pseudo_classes.asp
 
 
-  * `hover`
+- `hover`
   * Hover é basicamente dar a um elemento o seu estilo proprio, alterado através da ação do usuário, quando o mesmo passar o cursor de seu mouse sobre tal elemento.
   * Código de exemplificação ( CSS )
   ```css
@@ -34,7 +34,7 @@
   * `Primeiro código: ` Aqui, estamos estilizando elementos que possuem a classe .heading. A propriedade transition está sendo usada para suavizar as transições de estilo. No caso, all significa que todas as propriedades CSS terão a transição aplicada, 300ms é a duração da transição (300 milissegundos), e ease-in-out é o tipo de função de temporização, indicando que a transição começará suavemente, acelerará no meio e diminuirá no final.
   * `Segundo código: ` Esta regra CSS aplica estilos específicos quando o cursor do mouse está sobre um elemento com a classe .heading. No caso, estamos alterando a cor de fundo (background) para vermelho quando o mouse passa sobre o elemento.
 
-  * `link`
+- `link`
   * Permite que você selecione os links dentro de um elemento. Ela seleciona todos os links, até mesmo os que não foram visitados, incluindo os links ja estilizados em outras classes ou ids com o `hover`, `active` ou `visited`. Para um funcionamento adequado é essencial que ela venha antes das regras: `visited` — `hover` — `active`. O `focus` é uma pseudo-class geralmente usada antes de `a:hover` ou depois, dependendo do resultado esperado.
   * Código de exemplificação ( CSS )
 ```css
@@ -67,16 +67,17 @@ a:active {
     text-decoration: none;
 }
 ```
-* `Código [1]: ` Esta regra aplica um estilo padrão a todos os links. Define a cor do texto para darkorange.
-* `Código [2]: ` Aqui, especificamos o estilo para links que não foram visitados. Define a cor do texto para deeppink.
-* `Código [3]: ` Esta regra estiliza links que já foram visitados, alterando a cor do texto para firebrick.
-* `Código [4]: ` Ao passar o mouse sobre um link `(:hover)`, a cor de fundo é alterada para darkblue, o texto para white, e a decoração de texto é removida `(text-decoration: none)`. Isso cria um efeito visual quando o usuário interage com o link.
-* `Código [5]: ` Esta regra define o estilo para links quando estão sendo clicados `:active`. O fundo se torna darkslategray, o texto white, e a decoração de texto é removida.
+  * `Código [1]: ` Esta regra aplica um estilo padrão a todos os links. Define a cor do texto para darkorange.
+  * `Código [2]: ` Aqui, especificamos o estilo para links que não foram visitados. Define a cor do texto para deeppink.
+  * `Código [3]: ` Esta regra estiliza links que já foram visitados, alterando a cor do texto para firebrick.
+  * `Código [4]: ` Ao passar o mouse sobre um link `(:hover)`, a cor de fundo é alterada para darkblue, o texto para white, e a decoração de texto é removida `(text-decoration: none)`. Isso cria um efeito visual quando o usuário interage com o link.
+  * `Código [5]: ` Esta regra define o estilo para links quando estão sendo clicados `:active`. O fundo se torna darkslategray, o texto white, e a decoração de texto é removida.
+  
 
-`Pseudo classes para INPUT`
-* Estas pseudo-classes que virão a seguir não necessariamente são apenas para INPUT porém a forma que estudei elas encaixaram perfeitamente para melhor coompreensão.
-* De forma breve abordarei cada uma das pseudo-classes após a visualização de sua escrita.
-* Código de exemplificação ( CSS )
+- `Pseudo classes para INPUT`
+  * Estas pseudo-classes que virão a seguir não necessariamente são apenas para INPUT porém a forma que estudei elas encaixaram perfeitamente para melhor coompreensão.
+  * De forma breve abordarei cada uma das pseudo-classes após a visualização de sua escrita.
+  * Código de exemplificação ( CSS )
 
 ```css
 input:focus {
