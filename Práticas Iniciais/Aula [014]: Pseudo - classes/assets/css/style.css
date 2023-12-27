@@ -1,0 +1,73 @@
+        /* Parte UM da aula (Pseudo-classes) */
+
+.heading {
+    transition: all 300ms ease-in-out;
+    /* Estilizar o hover da classe heading*/
+}
+
+.heading:hover {
+    background: red;
+}
+
+a {
+    /* Todos os links*/
+    color: darkorange;
+}
+
+a:link {
+    /* Links que não foram visitados */
+    color: deeppink;
+}
+
+a:visited {
+    color: firebrick;
+}
+
+a:hover {
+    background: darkblue;
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    background: darkslategray;
+    color: white;
+    text-decoration: none;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+input:disabled {
+    background-color: rebeccapurple;
+    cursor: not-allowed;
+}
+
+input:enabled{
+    background-color: blue;
+    cursor: auto;
+}
+
+input:checked{
+    width: 50px;
+    height: 50px;
+}
+
+input:checked + p{
+    background: red;
+}
+
+.pai .lista li:first-child{
+    background: blueviolet;
+}
+
+input:required{
+    background: red;
+}
+
+        /* Parte DOIS da aula (Pseudo-classe:not()) */
+
+            
