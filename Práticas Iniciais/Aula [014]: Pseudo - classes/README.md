@@ -196,3 +196,52 @@ input:required{
 <hr>
 
 -`Quarto momento da aula`
+  * Neste momento vemos sobre pseudo-elementos, que seguem uma lógica similar as pseudo-classes porém atuam de forma diferente.
+  * Exemplo CSS: 
+```css
+    ul li::after{
+        /* Código [1] */
+        content: ' - ';
+        background: black;
+        color: #fff;
+        /*display: block;*/
+    }
+
+    ul li::before{
+        /* Código [2] */
+        content: ' xD ';
+        background: black;
+        color: #fff;
+        /*display: block;*/
+    }
+
+    p::first-letter{
+        /* Código [3] */
+        font-size: 30px;
+        display: block;
+        float: left;
+        margin: 0 10px 10px 0;
+    }
+
+    p::first-line{
+        /* Código [4] */
+        background: red;
+    }
+
+    p::selection{
+        /* Código [5] */
+        background: black;
+        color: white;
+    }
+
+    .form-field::placeholder{
+        /* Código [6] */
+        color: red;
+    }
+```
+  * `Código [1]: ` Estre trecho cria um pseudo-elemento `(::after)` que é inserido após o conteúdo de cada elemento `<li>` dentro de um `<ul>`. O conteúdo é definido como `' - '`, e são aplicados estilos de fundo preto `(background)` e `texto branco (color)`. A propriedade `display: block;` está comentada, mas se descomentada, fará com que o pseudo-elemento seja exibido como um bloco.
+  * `Código [2]: `  Similar ao exemplo anterior, este cria um pseudo-elemento `(::before)` que é inserido antes do conteúdo de cada elemento `<li>`. O conteúdo é definido como `' xD '`, e são aplicados estilos de `fundo preto e texto branco`. A propriedade `display: block;` está comentada, mas se descomentada, fará com que o pseudo-elemento seja exibido como um bloco.
+  * `Código [3]: ` Este pseudo-elemento `(::first-letter` seleciona a primeira letra de cada parágrafo `(<p>)` e aplica estilos a ela. Neste caso, a primeira letra terá um tamanho de fonte aumentado para 30px, será exibida como bloco, flutuará à esquerda e terá uma margem aplicada.
+  * `Código [4]: ` O pseudo-elemento `(::first-line)` seleciona a primeira linha de cada parágrafo `(<p>)` e aplica um fundo vermelho a essa linha.
+  * `Código [5]: ` Este pseudo-elemento `(::selection)` aplica estilos à parte de um elemento que foi selecionada pelo usuário. Neste caso, quando um usuário seleciona o texto dentro de um parágrafo, o fundo se torna preto e o texto torna-se branco.
+  * `Código [6]: ` Este seletor de pseudo-elemento `(::placeholder)` específico para a classe `.form-field` aplica a cor vermelha ao texto de placeholder dentro de campos de formulário com essa classe.Usando a sintaxe `::placeholder` você pegaria todos os placeholders do código por inteiro.

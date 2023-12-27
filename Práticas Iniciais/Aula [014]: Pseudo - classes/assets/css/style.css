@@ -104,3 +104,46 @@ ul li:nth-child(3n+5){
     /* Seleciona de "3 em 3" apartir do quinto elemento */
     background-color: darkviolet;
 }
+
+        /* Parte QUATRO da aula ( Pseudo elementos ) */
+
+ul li::after{
+    /* Criando um pseudo-elemento após o conteudo de li */
+    content: ' - ';
+    background: black;
+    color: #fff;
+    /*display: block;*/
+}
+
+ul li::before{
+    content: ' xD ';
+    background: black;
+    color: #fff;
+    /*display: block;*/
+}
+
+/* Comentado para não desestabilizar o "site" já montado */
+/* p::first-letter{
+    font-size: 30px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+} */
+
+/* Comentado para não desestabilizar o "site" já montado */
+/* p::first-line{
+    background: red;
+} */
+
+p::selection{
+    background: black;
+    color: white;
+}
+
+/* ::placeholder{
+    color: red;
+} */
+
+.form-field::placeholder{
+    color: red;
+}
