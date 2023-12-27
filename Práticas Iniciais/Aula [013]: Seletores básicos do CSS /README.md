@@ -213,4 +213,5 @@
   * Por mais que essa não seja a forma correta de modificarmos um atributo já declarado por padrão podemos também fazer dessa forma.Delegar que o atributo checked atue diferente do padrão
   * Porém para isso usamos pseudo-classes.Conteúdo que virá a seguir.
   
+  
 
