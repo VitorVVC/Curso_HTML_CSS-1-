@@ -127,3 +127,33 @@ input:required{
   * `Código [5]: ` Quando um input está marcado `(:checked)`, o parágrafo adjacente `(+ p)` tem o fundo alterado para `vermelho`.
   * `Código [6]: ` Estiliza o `primeiro elemento li` dentro de uma lista com a `classe .lista`, que está dentro de um elemento com a `classe .pai`. Define o fundo para `blueviolet`.
   * `Código [7]:  `Estiliza inputs que são marcados como obrigatórios `(:required)`. Define o fundo para `vermelho`.
+
+<hr>
+
+-`Segundo momento da aula`
+  * Neste momento somos apresentado a uma pseudo-classe importantissima que é a `:not()` e como a mesma funciona nestes dois exemplos:
+  * Exemplo do CSS:
+```css
+    p:not(.meio) {
+        color: blue;
+    }
+
+    input:not(:checked) + p{
+        background: yellow;
+    }
+```
+  * Implementação do exemplo anterior no HTML:
+```html
+    <input type="checkbox">
+
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p class="meio">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+```
+  * Passamos também que em uma sequencia de parágrafos o `p` do meio tenha a classe meio, e no CSS definimos que TODAS as tags `p` tenham a cor azul, MENOS `(:not)` a que possuir a class `.meio`.
+  * No primeiro momento de aula definimos que todo input `checked` seguido de um `p` o parágrafo ficaria em vermelho, neste momento nós passamos que todo `input:not(:checked) + p` no caso, todo input não checkado que venha a seguir de um P, o P será `amarelo`.
+
+
+
