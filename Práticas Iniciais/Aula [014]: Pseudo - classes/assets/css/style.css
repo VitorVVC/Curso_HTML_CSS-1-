@@ -74,6 +74,33 @@ p:not(.meio) {
     color: blue;
 }
 
- input:not(:checked) + p{
+ input:not(:checked) + p {
     background: yellow;
+}
+
+        /* Parte TRES da aula ( Pseudo-classe:nth-child() ) */
+
+ul li:nth-child(even){
+    /* Pares */
+    background-color: darkred;
+}
+
+ul li:nth-child(odd){
+    /* Impares */
+    background-color: darkturquoise;
+}
+
+ul li:nth-child(2){
+    /* Seleciona de acordo com indice */
+    background-color: beige;
+}
+
+ul li:nth-child(3n){
+    /* Seleciona de "3 em 3" */
+    background-color: darkgoldenrod;
+}
+
+ul li:nth-child(3n+5){
+    /* Seleciona de "3 em 3" apartir do quinto elemento */
+    background-color: darkviolet;
 }

@@ -155,5 +155,44 @@ input:required{
   * Passamos também que em uma sequencia de parágrafos o `p` do meio tenha a classe meio, e no CSS definimos que TODAS as tags `p` tenham a cor azul, MENOS `(:not)` a que possuir a class `.meio`.
   * No primeiro momento de aula definimos que todo input `checked` seguido de um `p` o parágrafo ficaria em vermelho, neste momento nós passamos que todo `input:not(:checked) + p` no caso, todo input não checkado que venha a seguir de um P, o P será `amarelo`.
 
+<hr>
 
+-`Terceiro momento da aula`
+  * Neste momento somos apresentados a uma pseudo-classe também muito importante que seria a: `:ntn-child()`.
+  * Pseudo-classe essa que é utilizada para selecionar elementos com base em suas posições em um grupo de elementos irmãos.
+  * Exemplo do CSS:
+```css
+    ul li:nth-child(even){
+        /* Código [1] */
+        background-color: darkred;
+    }
 
+    ul li:nth-child(odd){
+        /* Código [2] */
+        background-color: darkturquoise;
+    }
+
+    ul li:nth-child(2){
+        /* Código [3] */
+        background-color: beige;
+    }
+
+    ul li:nth-child(3n){
+        /* Código [4] */
+        background-color: darkgoldenrod;
+    }
+
+    ul li:nth-child(3n+5){
+        /* Código [5] */
+        background-color: darkviolet;
+    }
+```
+  * `Código [1]: ` Isso aplica estilos a todos os elementos `<li>` que são filhos diretos de um `<ul>` e que ocupam posições pares dentro desse `<ul>`. O fundo desses elementos será colorido de `darkred`.
+  * `Código [2]: ` Da mesma forma, isso aplica estilos a todos os elementos `<li>` que são filhos diretos de um `<ul>` e que ocupam posições ímpares dentro desse `<ul>`. O fundo desses elementos será colorido de `darkturquoise`.
+  * `Código [3]: ` Isso seleciona o segundo elemento `<li>` que é um filho direto de um `<ul>` e aplica o estilo com um fundo colorido de `beige`.
+  * `Código [4]: ` Isso seleciona todos os elementos `<li>` que são filhos diretos de um `<ul>` e estão em posições múltiplas de 3 (ou seja, 3, 6, 9, ...). Esses elementos terão um fundo colorido de `darkgoldenrod`.
+  * `Código [5]: ` Semelhante ao exemplo anterior, mas aqui a contagem começa a partir do quinto elemento. Ele seleciona o quinto elemento, o oitavo, o décimo primeiro e assim por diante, aplicando o estilo correspondente.
+
+<hr>
+
+-`Quarto momento da aula`
