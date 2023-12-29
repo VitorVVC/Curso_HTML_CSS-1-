@@ -1,0 +1,134 @@
+/* Maiores "pontuacoes" do CSS em questão de especificidade
+ID || Classes || Atributos || Pseudo - Classes || Elementos || Pseudo - Elementos 
+*/
+
+#p {
+    /* Especificidade 1 0 0  */
+   background: red; 
+}
+
+#p.p{
+    /* Especificidade 0 1 0 */
+    /* So "aumentará" a especificidade fazendo: "#p.p{}" 1 1 0  */
+    background: yellow;
+}
+
+#b p#p.p{
+    /* Especificidade 2 1 1  */
+    background: blue;
+}
+
+body#b.b-class p#p.p::selection:hover{
+    /* Especifidade 2 2 4 */
+    background: violet;
+}
+
+/* Não ideal porém bom de comentar-mos: */
+body{
+    background: darkcyan !important;
+}
+
+body{
+    background: darkblue;
+}
+
+/* As regras mais especificas serão aplicadas sempre.
+Primeiras coisas a serem analisadas:
+Especificidade
+Empate
+style
+!Important */
+
+/* No fim do dia, é melhor utilizarmos classes, ID'S, Pseudo-classes e pseudo-elementos */
+
+/* Eu "brincando" com CSS: */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+p{
+    width: 1500px;
+    margin-top: 20px;
+    padding: 15px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+p::selection{
+    background: black;
+    color: white;
+}
+
+hr{
+    margin: 10px 0 ;
+    border-color: black;
+}
+
+#h-aula{
+    color: darkorchid;
+    text-align: center;
+}
+
+#heading div{
+    width: 280px;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 5px auto;
+}
+
+
+#heading a{
+    text-decoration: none;
+    font-style:sans-serif;
+    display: flex;
+    color: #afa1f1;
+}
+
+
+.heading-1{
+    width: 280px;
+    padding: 10px;
+    font-size: 32;
+    text-transform: uppercase;
+    transition: all 300ms ease-in-out;
+    
+}
+
+.heading-1:hover{
+    background: rgba(255,123,255,0.5);
+    color: #fff;
+}
+
+
+#navegation{
+    display: flex;
+    background: rgba(0,0,0,0.5);
+    width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navegation:hover{
+    background: rgba(123,255,255,0.5);
+    transition: all 300ms ease-in-out;
+    
+}
+
+#navegation a{
+    text-decoration: none;
+    font-style:normal;
+    display: flex;
+    color: #95ff01;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 15px 0px;
+}
+
+#navegation a:hover{
+    color: #fff;
+}
