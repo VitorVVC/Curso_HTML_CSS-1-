@@ -6,12 +6,16 @@
   * Neste repositorio estarei armazenando uma aula com breves explicações sobre displays e float no CSS..
   * Propriedades essas que são utilizadas de N maneiras e para N soluções.. Mas abordarei breves resumos sobre ambos os conteúdos ao decorrer deste documento.
 
+- Links Uteis:
+  * W3S (Float and Clear) --> https://www.w3schools.com/css/css_float.asp
+  * W3S (Display property) --> https://www.w3schools.com/cssref/pr_class_display.php
+
 - `Float`
   * Oque é um float ?..
   * De forma breve, um elemento que possua float acabará por estar em um estado de "flutuar". Quando possuimos um elemento `block` e queremos que não consuma toda a tela, utilizamos um `float: left`, assim ele após consumir seu espaço referente a altura e largura "flutuará" para a esquerda. Possuindo tal comportamento fica mais simples de montarmos "grids" e outros elementos que precisem da propriedade block de forma mais organizada, estruturada e semântica.
   
 - `Clear`
-  * O clear é uma propriedade que anda ao lado do float, pois fazendo elementos flutuarem precisamos depois de um tempo os "limpar" para dar entrada a novos elementos e propriedades, para isso utilizamos o `clear: `. O clear é uma propriedade que pode ser passada para qualquer atributo, para antes do mesmo ser colocado ele limpe o float anterior...
+  * O clear é uma propriedade que anda ao lad   o do float, pois fazendo elementos flutuarem precisamos depois de um tempo os "limpar" para dar entrada a novos elementos e propriedades, para isso utilizamos o `clear: `. O clear é uma propriedade que pode ser passada para qualquer atributo, para antes do mesmo ser colocado ele limpe o float anterior...
   * Uma forma de fazer isso de forma "automática" e simples, é inserir um pseudo-elemento `:after`, desta forma:
 
 ```css
