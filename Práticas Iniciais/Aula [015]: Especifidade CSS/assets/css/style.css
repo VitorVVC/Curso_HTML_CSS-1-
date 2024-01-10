@@ -1,7 +1,6 @@
 /* Maiores "pontuacoes" do CSS em questão de especificidade
 ID || Classes || Atributos || Pseudo - Classes || Elementos || Pseudo - Elementos 
 */
-
 #p {
     /* Especificidade 1 0 0  */
    background: red; 
