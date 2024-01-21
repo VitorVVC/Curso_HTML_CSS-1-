@@ -3,4 +3,4 @@
 - Oque aprendi?
   * Neste curso aprenderei o básico tanto de HTML e CSS.
   * Verei integrações entre ambas as tecnologias em seu antro mais simples.
-  * Estarei diariamente praticando e consequentemente realizando commits neste repositorio.
+  * Este curso é uma seção extra do meu curso de JavaScript e TypeScript, seção que possui 13h de AULAS e 4h de PROJETOS
