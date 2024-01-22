@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid{
+    padding: 15px;
+}
+
+/* Dessa forma, limpamos esta grid automaticamente para o elemento em seguida não precise ser limpa */
+.grid::after{
+    content: '';   
+    display: block;
+    clear: both;
+}
+
+.grid .col{
+    /* display: inline-block; */
+    /* inline, inline-block, block & grid */
+    display: block;
+    width: 33.33%;
+    height: 300px;
+    float: left; /* Float "diz" que ao consumir seu espaço "libere" o espaco extra para outros elementos*/
+    padding: 15px;
+}
+
+.grid .col-content{
+    width: 100%;
+    height: 100%;
+    background: red;
+}
+
+p{
+    clear: both;
+}
+
+@media all and (max-width: 320px){
+    .grid .col{
+        width: 100%;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+    .grid .col{
+        width: 50%;
+    }
+}
+
+@media (min-width: 769) and (max-width: 1200px) {
+    .grid .col{
+        width: 50%;
+    }
+}
+
+@media all and (min-width:1200){
+    .grid .col{
+        width: 25%;
+    }
+}
+/* Existem essas tambem */
+/* @media not ()
+@media and () */
