@@ -54,3 +54,9 @@
   - Um elemento com posição pegajosa é um pouco como uma mistura de relativo e fixo. O elemento é tratado como relativo até que ele atinja um determinado ponto enquanto rola a página, momento em que ele se torna fixo.
   - Ela pode se tornar uma fixa e "se fixar" novamente a outro elemento com position também sticky.
 
+```css
+  .elemento {
+    position: sticky;
+    top: 20px;
+  }
+```
