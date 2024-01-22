@@ -1,0 +1,17 @@
+p{
+    /* color: red; */
+    /* background-color: yellow;  */
+    /* font-size: 20px; */
+    /* font-style: italic; */
+    /* font-weight: bold; */
+    /* direction: ltr; Left to right or right to left (rtl) */
+    /* letter-spacing: 1px; Espaçamento entre letras */
+    /* word-spacing: 5px; Espaçamento entre letras */
+    /* line-height: 30px; Altura da linha do texto */
+    /* text-align: left; Alinhar o texto onde quisermos */
+    /* text-decoration: underline line-through; */
+    /* text-indent: 50px; Identacao para textos */
+    /* text-shadow: 1px 1px 1px red; Anda da esquerda para direita ( podemos usar - para o inverso) || Anda para baixo || Anda para cima */
+    /* text-transform: lowercase; */
+    /* text-transform: capitalize; */
+}
