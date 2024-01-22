@@ -13,5 +13,5 @@ p{
     /* text-indent: 50px; Identacao para textos */
     /* text-shadow: 1px 1px 1px red; Anda da esquerda para direita ( podemos usar - para o inverso) || Anda para baixo || Anda para cima */
     /* text-transform: lowercase; */
-    /* text-transform: capitalize; */
+    text-transform: capitalize;
 }

@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+}
+/* Parte UM da aula */
+
+.filha-1, .filha-2, .filha-3{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    background: rgb(255, 0, 0);
+    /* position: static; Position PADRÃO! */
+    /* Não habilita mudanca com top, bottom e etc. */
+}
+
+.filha-1{
+    /* Little gambiarra para centralizar um conteudo na tela independentemente da view port */
+    /* Lembrar: -150px pq é metade de 300px acima declarado */
+    /* top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+    z-index: 2; */
+}
+
+.filha-2{
+    background: greenyellow;
+    /* z-index: 1; */
+    /* Mesmo comportamento de position ABSOLUTE */
+    /* Exceção: Ele NUNCA é movido enquanto o site está sendo "scrollado" */
+    position: fixed;
+    top: 30%;
+    right: 30%;
+}
+
+.filha-3{
+    background-color: blue;
+    /* Ele se move sem afetar o VIEWPORT e sim os elementos ao redor */
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.outra{
+    font-size: 50px;
+    color: aliceblue;
+    background-color: black;
+    /* Ele não sai para "fora" do elemento que está dentro, ele "respeita" os elementos pai e só fica dentro do mesmo  */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+ul{
+    overflow-y: scroll;
+    height: 100px;
+}
+
+ul li.sticky{
+    position: sticky;
+    background: gray;
+    top: 0;
+}
