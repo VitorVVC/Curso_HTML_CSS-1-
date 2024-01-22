@@ -21,7 +21,7 @@
       direction: ltr; /* Left to right or right to left (rtl) */
       line-height: 30px; /* Altura da linha do texto */
       letter-spacing: 1px; /* Espaçamento entre letras */
-      word-spacing: 5px; /* Espaçamento entre letras */
+      word-spacing: 5px; /* Espaçamento entre palavras */
       text-shadow: 1px 1px 1px red; /* Anda da esquerda para direita ( podemos usar - para o inverso) || Anda para baixo || Anda para cima */
       text-align: left; /* Alinhar o texto onde quisermos */
       text-indent: 50px; /* Identacao para textos */
