@@ -9,23 +9,23 @@
   - Por meio do código abaixo foi me passado tais atributos que usamos para passar N propriedade para textos, de cores até espaçamento e muito mais.
 
 ```css
-p{
-    /* color: red; */
-    /* background-color: yellow;  */
-    /* font-size: 20px; */
-    /* font-style: italic; */
-    /* font-weight: bold; */
-    /* direction: ltr; Left to right or right to left (rtl) */
-    /* letter-spacing: 1px; Espaçamento entre letras */
-    /* word-spacing: 5px; Espaçamento entre letras */
-    /* line-height: 30px; Altura da linha do texto */
-    /* text-align: left; Alinhar o texto onde quisermos */
-    /* text-decoration: underline line-through; */
-    /* text-indent: 50px; Identacao para textos */
-    /* text-shadow: 1px 1px 1px red; Anda da esquerda para direita ( podemos usar - para o inverso) || Anda para baixo || Anda para cima */
-    /* text-transform: lowercase; */
-    /* text-transform: capitalize; */
-}
+    p{
+      color: red; 
+      background-color: yellow;  
+      font-size: 20px; 
+      font-style: italic; 
+      font-weight: bold; 
+      text-decoration: underline line-through; 
+      text-transform: lowercase;
+      text-transform: capitalize; 
+      direction: ltr; /* Left to right or right to left (rtl) */
+      line-height: 30px; /* Altura da linha do texto */
+      letter-spacing: 1px; /* Espaçamento entre letras */
+      word-spacing: 5px; /* Espaçamento entre letras */
+      text-shadow: 1px 1px 1px red; /* Anda da esquerda para direita ( podemos usar - para o inverso) || Anda para baixo || Anda para cima */
+      text-align: left; /* Alinhar o texto onde quisermos */
+      text-indent: 50px; /* Identacao para textos */
+    }
 ```
 
 - Podemos controlar a cor, fundo, tamanho da letra, seu estilo e até se ela será ou não mais "bold", que seria algo próximo de negrito.
