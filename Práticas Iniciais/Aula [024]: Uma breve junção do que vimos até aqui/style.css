@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.grid{
+    padding: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 73px;
+}
+
+/* Dessa forma, limpamos esta grid automaticamente para o elemento em seguida não precise ser limpa */
+.grid::after{
+    content: '';   
+    display: block;
+    clear: both;
+}
+
+.grid .col{
+    /* display: inline-block; */
+    /* inline, inline-block, block & grid */
+    display: block;
+    width: 33.33%;
+    height: 300px;
+    float: left; /* Float "diz" que ao consumir seu espaço "libere" o espaco extra para outros elementos*/
+    padding: 15px;
+}
+
+.grid .col-content{
+    width: 100%;
+    height: 100%;
+    background: red;
+}
+
+.menu{
+    width: 100%;
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+}
+
+.menu ul{
+    list-style: none;
+    display: block;
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.menu ul li{
+    float: left;
+}
+
+.menu ul li a{
+    display: block;
+    color: #fff;
+    padding: 20px;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+}
+.menu ul li a:hover{
+    background: #333;
+}
+
+
+.full-page{
+    padding: 0 30px;
+    max-width: 100%;
+    padding-top: 73px;
+    height: 100vh;
+    background-color: turquoise;
+}
+
+.full-page-content{
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+@media all and (max-width: 320px){
+    .grid .col{
+        width: 100%;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+    .grid .col{
+        width: 50%;
+    }
+}
+
+@media (min-width: 769) and (max-width: 1200px) {
+    .grid .col{
+        width: 50%;
+    }
+}
+
+@media all and (min-width:1200){
+    .grid .col{
+        width: 25%;
+    }
+}
