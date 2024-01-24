@@ -3,8 +3,8 @@
 ### Flexbox
 
 - `Links uteis`
-  - `https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox#um_aparte_no_modelo_flex`.
-  - `https://flexboxfroggy.com`.
+  - `https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox#um_aparte_no_modelo_flex`
+  - `https://flexboxfroggy.com`
   - `https://css-tricks.com/snippets/css/a-guide-to-flexbox/`
 
 - `Oque é flexbox?`
