@@ -5,8 +5,7 @@
 }
 
 .flex-container{
-    display: flex;
-
+    display:flex;
     /* Padrão: */
     /* Direção do eixo*/
     flex-direction: row; 
@@ -18,19 +17,70 @@
 
     /* Espaçamento entre os itens no flex ( não suportado em alguns navegadores ) */
     /* gap: 30px; */
-    /* Se não houver espaco para a ocupar a linha inteira pode escrever fora */
-    flex-wrap: wrap;
     /* Alinha os itens */
-    align-items: flex-start;
+    /* align-items: flex-start; */
     /* Alinha todo conteudo */
-    align-content: space-between;
+    /* align-content: space-between; */
+    /* Se não houver espaco para a ocupar a linha inteira pode escrever fora */
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    flex-flow: row nowrap;
     background: yellow;
-    height: 640px;
 }
 
 .flex-item{
+    flex: 1 1 320px;
+    flex-grow: 1;
+    flex-basis: 320px;
+    height: 200px;
     color: #fff;
-    width: 33.33%;
     background: red;
 }
 
+.flex-item:nth-child(2){
+    flex: 2 1 320px;
+    background-color: purple;
+}
+
+.flex-item:nth-child(3){
+    align-self: flex-end;
+}
+
+.flex-item:nth-child(1){
+    order: -1;
+}
+
+
+body{
+    font-size: 24px;
+}
+
+p{
+    margin: 0 0 20px 0;
+}
+
+.two-columns{
+    display: flex;
+}
+
+.two-columns .col{
+    display: flex;
+    flex-direction: column;
+
+    background: lawngreen;
+    margin:15px;
+    padding: 30px;
+}
+
+.gallery{
+    flex-flow: row wrap;
+    display: flex;
+}
+
+.gallery .image{
+    flex: 1 0 20%;
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+    margin: 10px;
+}
