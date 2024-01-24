@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+
+    /* Padrão: */
+    /* Direção do eixo*/
+    flex-direction: row; 
+    /* Alinhar no eixo (PRINCIPAL) / (Alinhar perante o flex direction) */
+    justify-content: flex-start;
+    /* Alinhar no eixo (SECUNDARIO)*/
+    align-items: stretch;
+    /* Padrão end. */
+
+    /* Espaçamento entre os itens no flex ( não suportado em alguns navegadores ) */
+    /* gap: 30px; */
+    align-items: stretch;
+    background: yellow;
+    height: 500px;
+}
+
+.flex-item{
+    color: #fff;
+    width: 100%;
+    background: red;
+    margin: 10px;
+}
+
+.flex-item:nth-child(3){
+    font-size: 40px;
+}
