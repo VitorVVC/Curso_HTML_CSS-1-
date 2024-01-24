@@ -37,3 +37,19 @@
   - A propriedade gap é usada em layouts flexíveis para definir o espaço entre os itens em um contêiner flexível. Ela é especialmente útil quando você deseja adicionar espaçamento entre elementos filhos sem a necessidade de usar margens ou preenchimentos.
   - A propriedade gap é aplicada ao contêiner flexível e aceita valores para espaçamento na direção da linha (horizontal, se a direção principal for row ou row-reverse) e na direção da coluna (vertical, se a direção principal for column ou column-reverse).
 
+- `flex-wrap`
+  -  Esta propriedade controla se os itens no contêiner flexível devem ser distribuídos em uma única linha ou em várias linhas. Existem três valores principais para flex-wrap:
+  -  `nowrap (padrão)`: Todos os itens são dispostos em uma única linha.
+  -  `wrap`: Os itens são dispostos em várias linhas, se necessário.
+  -  `wrap-reverse`: Os itens são dispostos em várias linhas, mas em ordem reversa.
+  -  Se você definir `flex-wrap: wrap;` e o conteúdo não couber em uma única linha, ele será automaticamente movido para a próxima linha.
+
+- `align-content`
+  - Esta propriedade controla o alinhamento de linhas no contêiner flexível quando há espaço extra na direção transversal. Ela só tem efeito quando há mais de uma linha no contêiner. Os valores para align-content incluem:
+  - `flex-start`: Linhas são alinhadas no início do contêiner.
+  - `flex-end`: Linhas são alinhadas no final do contêiner.
+  - `center`: Linhas são centralizadas no contêiner.
+  - `space-between`: O espaço restante é distribuído igualmente entre as linhas.
+  - `space-around`: O espaço restante é distribuído igualmente ao redor das linhas.
+  - `stretch`: Linhas são esticadas para preencher o contêiner.
+  - A propriedade align-content afeta a disposição das linhas quando há espaço extra na direção transversal. Se flex-wrap for nowrap, align-content não terá efeito, pois não há várias linhas.

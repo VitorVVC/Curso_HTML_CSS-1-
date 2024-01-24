@@ -18,18 +18,19 @@
 
     /* Espaçamento entre os itens no flex ( não suportado em alguns navegadores ) */
     /* gap: 30px; */
-    align-items: stretch;
+    /* Se não houver espaco para a ocupar a linha inteira pode escrever fora */
+    flex-wrap: wrap;
+    /* Alinha os itens */
+    align-items: flex-start;
+    /* Alinha todo conteudo */
+    align-content: space-between;
     background: yellow;
-    height: 500px;
+    height: 640px;
 }
 
 .flex-item{
     color: #fff;
-    width: 100%;
+    width: 33.33%;
     background: red;
-    margin: 10px;
 }
 
-.flex-item:nth-child(3){
-    font-size: 40px;
-}
