@@ -40,6 +40,13 @@ body{
     width: 100%;
     height: 100%;
     background: red;
+    /* border-radius: 100px 100px 100px 100px; */
+    /* Circulo perfeito: So pode ser feito com tamnhos brutos ( px ).Mas no geral é somente passar border-radius 50%*/ 
+    /* border-radius: 50%; */
+
+    /* Deslocamento X Y. Glow . Espaço */
+    box-shadow:  -5px -5px 5px 5px blue;
+    
 }
 
 .menu{
