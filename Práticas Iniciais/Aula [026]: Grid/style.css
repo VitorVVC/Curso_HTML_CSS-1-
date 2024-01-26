@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: sans-serif;
+    font-size: 40px;
+}
+
+.grid{
+    display: grid;
+    /* Tamanho das colunas na ordem */ 
+    /* FR --> "Fragmento" */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+     grid-template-columns: repeat(auto-fill,minmax(320px, 1fr));
+    /* grid-template-columns: repeat(auto-fill,minmax(320px, 1fr)); */
+
+    /* grid-template-rows: 2fr 1fr 3fr; */
+    /* grid-template-rows: repeat(2, 1 fr 2fr); */
+    
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.grid div{
+    background: aqua;
+    min-height: 100px;
+}
+
+
+.grid div:nth-child(5){ 
+    /* grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3; */
+    /* Comando para "Cobrir" as linhas */
+    /* grid-column: span 2; */
+    background-color: darkred;
+}
+
+@media (max-width: 768px){
+    .grid div:nth-child(5){ 
+        grid-column: span 1;
+    }
+}
