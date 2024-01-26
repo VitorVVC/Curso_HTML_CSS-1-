@@ -14,7 +14,8 @@ body{
     /* Tamanho das colunas na ordem */ 
     /* FR --> "Fragmento" */
     /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
-     grid-template-columns: repeat(auto-fill,minmax(320px, 1fr));
+     /* grid-template-columns: repeat(auto-fill,minmax(320px, 1fr)); */
+     grid-template-columns: [um] 1fr [dois] 2fr [tres] 3fr [quatro] 4fr;
     /* grid-template-columns: repeat(auto-fill,minmax(320px, 1fr)); */
 
     /* grid-template-rows: 2fr 1fr 3fr; */
@@ -39,6 +40,10 @@ body{
     /* Comando para "Cobrir" as linhas */
     /* grid-column: span 2; */
     background-color: darkred;
+    /* Utilizando nomes em */
+    grid-column: um / quatro;
+    /* Inicia na linha um e termina na um, inicia na coluna quatro e termina na quatro */
+    grid-area: um / um / quatro / quatro;
 }
 
 @media (max-width: 768px){
