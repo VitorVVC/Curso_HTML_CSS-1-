@@ -26,7 +26,7 @@ body{
     /* Porém alguns navegadores não suportam muito bem GRID principalmente em flexbox */
     /* Contudo, position que seria uma tecnlogia mais recente é suportado em mais navegadores */
     /* Gap em GRID bem provavelmente será suportado, porém em alguns navegadores mais antigos como firefox 10 por exemplo pode não ser suportado, consequentemente teriamos de usar "gambiarras" */
-    
+
     gap: 30px;
     row-gap: 50px;
     column-gap: 40px;
@@ -54,5 +54,68 @@ body{
 @media (max-width: 768px){
     .grid div:nth-child(5){ 
         grid-column: span 1;
+    }
+}
+
+/* Momento 4 --> Final de aula */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: sans-serif;
+    font-size: 40px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-4-momento{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+    'header header' 
+    'nav main'
+    'rodape rodape';
+}
+
+.grid-4-momento div:nth-child(1){
+    background-color: red;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-4-momento div:nth-child(2){
+    grid-area: nav;
+    background-color: yellow;
+}
+
+.grid-4-momento div:nth-child(3){
+    grid-area: main;
+    background-color: violet;
+}
+
+.grid-4-momento div:nth-child(4){
+    grid-area: rodape;
+    background-color: turquoise;
+}
+
+@media (max-width: 768px){
+    .grid-4-momento{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-template-areas: 
+        'header' 
+        'main'
+        'nav'
+        'rodape';
     }
 }
