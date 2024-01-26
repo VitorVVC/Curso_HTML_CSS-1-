@@ -20,11 +20,16 @@ body{
 
     /* grid-template-rows: 2fr 1fr 3fr; */
     /* grid-template-rows: repeat(2, 1 fr 2fr); */
-    
-    
     max-width: 1200px;
     margin: 0 auto;
+    /* Espaçamento entre linhas e colunas */
+    /* Porém alguns navegadores não suportam muito bem GRID principalmente em flexbox */
+    /* Contudo, position que seria uma tecnlogia mais recente é suportado em mais navegadores */
+    /* Gap em GRID bem provavelmente será suportado, porém em alguns navegadores mais antigos como firefox 10 por exemplo pode não ser suportado, consequentemente teriamos de usar "gambiarras" */
+    
     gap: 30px;
+    row-gap: 50px;
+    column-gap: 40px;
 }
 
 .grid div{
